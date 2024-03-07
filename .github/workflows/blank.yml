@@ -26,8 +26,9 @@ jobs:
       uses: anothrNick/github-tag-action@1.64.0
       env:
         WITH_V: true
-        DEFAULT_BUMP: patch
+        DEFAULT_BUMP: build
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        INITIAL_VERSION: 0.0.62-build.32
         PRERELEASE: true
         PRERELEASE_SUFFIX: build
         VERBOSE: true
