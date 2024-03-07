@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    permissions: write-all
     runs-on: ubuntu-latest
     outputs: 
       all_changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
@@ -25,8 +26,9 @@ jobs:
       uses: anothrNick/github-tag-action@1.64.0
       env:
         WITH_V: true
+        DEFAULT_BUMP: build
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        INITIAL_VERSION: 0.0.62-build.31
+        INITIAL_VERSION: 0.0.62-build.32
         PRERELEASE: true
         PRERELEASE_SUFFIX: build
         VERBOSE: true
