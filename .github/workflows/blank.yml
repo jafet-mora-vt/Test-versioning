@@ -32,6 +32,7 @@ jobs:
         PRERELEASE: true
         PRERELEASE_SUFFIX: build
         VERBOSE: true
+
     
     - run: >
         echo New version: ${{ steps.versioning.outputs.new_tag  }};
