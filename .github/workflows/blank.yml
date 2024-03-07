@@ -28,7 +28,7 @@ jobs:
         WITH_V: true
         DEFAULT_BUMP: build
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # INITIAL_VERSION: 0.0.62-build.32
+        INITIAL_VERSION: 0.0.62-build.33
         PRERELEASE: true
         PRERELEASE_SUFFIX: build
         VERBOSE: true
